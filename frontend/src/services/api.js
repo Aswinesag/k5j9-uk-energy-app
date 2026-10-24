@@ -2,7 +2,7 @@
  * API service client for UK Energy Day-Ahead Purchasing Analytics Platform.
  */
 
-const BASE_URL = 'https://reint-energy-backend.onrender.com/api';
+const BASE_URL = 'https://reint-energy-backend.onrender.com';
 
 async function fetchJson(endpoint) {
   const url = `${BASE_URL}${endpoint}`;
@@ -31,4 +31,3 @@ export const energyApi = {
   getMonthlySummary: () => fetchJson('/api/energy/monthly-summary'),
   getHealth: () => fetchJson('/api/health'),
 };
-
